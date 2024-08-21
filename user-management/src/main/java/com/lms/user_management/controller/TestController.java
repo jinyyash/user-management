@@ -10,8 +10,8 @@ import java.security.Principal;
 @RequestMapping("home")
 public class TestController {
     @GetMapping
-    public String home(Principal principal){
-        return "Hello Home "+ principal.getName();
+    public String home(){
+        return "Hello Home ";
     }
 
 }
