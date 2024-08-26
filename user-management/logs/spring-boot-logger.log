@@ -1,0 +1,57 @@
+2024-08-26 20:26:29,505 INFO o.s.b.StartupInfoLogger [main] Starting UserManagementApplication using Java 21.0.2 with PID 36971 (/Users/jinadi/Documents/personal_projects/lms-microservice-parent/user-management/target/classes started by jinadi in /Users/jinadi/Documents/personal_projects/lms-microservice-parent/user-management)
+2024-08-26 20:26:29,506 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-26 20:26:29,766 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-26 20:26:29,792 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2024-08-26 20:26:30,032 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8005 (http)
+2024-08-26 20:26:30,037 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8005"]
+2024-08-26 20:26:30,039 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-08-26 20:26:30,039 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-26 20:26:30,070 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-08-26 20:26:30,071 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 545 ms
+2024-08-26 20:26:30,123 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-26 20:26:30,219 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@483f286e
+2024-08-26 20:26:30,227 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-26 20:26:30,248 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-26 20:26:30,275 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-26 20:26:30,291 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-26 20:26:30,429 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-26 20:26:30,464 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-26 20:26:30,816 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-26 20:26:30,817 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26 20:26:30,942 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-26 20:26:31,035 INFO o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [main] Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-08-26 20:26:31,035 WARN o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-26 20:26:31,122 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@556e4588, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f5df012, org.springframework.security.web.context.SecurityContextHolderFilter@5c9168c3, org.springframework.security.web.header.HeaderWriterFilter@1c15a6aa, org.springframework.security.web.authentication.logout.LogoutFilter@62c1259f, com.lms.user_management.admin.config.JwtAuthenticationFilter@4724b2c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@571903ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f30d0eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38f3dbbf, org.springframework.security.web.session.SessionManagementFilter@5b49b1df, org.springframework.security.web.access.ExceptionTranslationFilter@58189132, org.springframework.security.web.access.intercept.AuthorizationFilter@5ed88e31]
+2024-08-26 20:26:31,188 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8005"]
+2024-08-26 20:26:31,193 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8005 (http) with context path '/'
+2024-08-26 20:26:31,198 INFO o.s.b.StartupInfoLogger [main] Started UserManagementApplication in 1.89 seconds (process running for 2.02)
+2024-08-26 20:29:10,584 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26 20:29:10,586 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-08-26 20:29:10,588 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-08-26 20:29:14,125 INFO o.s.b.StartupInfoLogger [main] Starting UserManagementApplication using Java 21.0.2 with PID 37699 (/Users/jinadi/Documents/personal_projects/lms-microservice-parent/user-management/target/classes started by jinadi in /Users/jinadi/Documents/personal_projects/lms-microservice-parent/user-management)
+2024-08-26 20:29:14,125 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-26 20:29:14,396 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-26 20:29:14,416 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-08-26 20:29:14,639 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8005 (http)
+2024-08-26 20:29:14,644 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8005"]
+2024-08-26 20:29:14,646 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-08-26 20:29:14,646 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-26 20:29:14,669 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-08-26 20:29:14,670 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 525 ms
+2024-08-26 20:29:14,723 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-26 20:29:14,796 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ae15
+2024-08-26 20:29:14,797 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-26 20:29:14,817 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-26 20:29:14,844 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-26 20:29:14,858 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-26 20:29:14,990 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-26 20:29:15,013 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-26 20:29:15,378 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-26 20:29:15,380 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26 20:29:15,509 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-26 20:29:15,611 INFO o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [main] Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-08-26 20:29:15,612 WARN o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-26 20:29:15,698 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79080255, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cdb53d6, org.springframework.security.web.context.SecurityContextHolderFilter@38f3dbbf, org.springframework.security.web.header.HeaderWriterFilter@66df362c, org.springframework.security.web.authentication.logout.LogoutFilter@6344004d, com.lms.user_management.admin.config.JwtAuthenticationFilter@585672dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70ab1ce0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1735e1c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62ba3045, org.springframework.security.web.session.SessionManagementFilter@3ad9fea, org.springframework.security.web.access.ExceptionTranslationFilter@c555e1e, org.springframework.security.web.access.intercept.AuthorizationFilter@7945986a]
+2024-08-26 20:29:15,765 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8005"]
+2024-08-26 20:29:15,771 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8005 (http) with context path '/'
+2024-08-26 20:29:15,775 INFO o.s.b.StartupInfoLogger [main] Started UserManagementApplication in 1.854 seconds (process running for 2.001)
