@@ -11,19 +11,19 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AuthenticationService {
-    private final UserRepository userRepository;
+    private final UserService userService;
 
     private final PasswordEncoder passwordEncoder;
 
     private final AuthenticationManager authenticationManager;
 
     public AuthenticationService(
-            UserRepository userRepository,
+            UserService userService,
             AuthenticationManager authenticationManager,
             PasswordEncoder passwordEncoder
     ) {
         this.authenticationManager = authenticationManager;
-        this.userRepository = userRepository;
+        this.userService = userService;
         this.passwordEncoder = passwordEncoder;
     }
 
@@ -35,7 +35,7 @@ public class AuthenticationService {
                 user.setEmail(input.getEmail());
                 user.setPassword(passwordEncoder.encode(input.getPassword()));
 
-        return userRepository.save(user);
+        return userService.save(user);
     }
 
     public User authenticate(LoginUserInput input) {
@@ -46,7 +46,7 @@ public class AuthenticationService {
                 )
         );
 
-        return userRepository.findByEmail(input.getEmail())
+        return userService.findByEmail(input.getEmail())
                 .orElseThrow();
     }
 }
