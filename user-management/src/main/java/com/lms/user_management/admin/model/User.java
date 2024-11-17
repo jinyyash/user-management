@@ -1,5 +1,6 @@
 package com.lms.user_management.admin.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +20,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@JsonIgnoreProperties({"enabled","accountNonExpired", "accountNonLocked", "credentialsNonExpired", "authorities","username"})
 public class User implements Serializable, UserDetails {
     @Id
     @SequenceGenerator(name="user_seq_gen",

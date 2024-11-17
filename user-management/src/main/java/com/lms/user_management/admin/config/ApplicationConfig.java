@@ -1,6 +1,7 @@
 package com.lms.user_management.admin.config;
 
 import com.lms.user_management.admin.dao.UserRepository;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
